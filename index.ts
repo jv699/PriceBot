@@ -1,10 +1,7 @@
 async function fetch_demo1(){
-	const resp = await fetch('https://store.steampowered.com/sale/steamdeckrefurbished');
+	const resp = await fetch('http://localhost:5000/companies');
 
-	console.log(await resp);
-	console.log(await resp.json.toString());
-
-	// const reader = resp.body.getReader({ mode: "byob" });
+	console.log(await resp.json());
 }
 
 fetch_demo1();
